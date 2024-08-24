@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Todo</title>
     <style type="text/tailwindcss">
       @layer utilities {
@@ -13,7 +13,7 @@
       }
     </style>
   </head>
-  <body class="bg-pink-400">
+  <body class="bg-pink-300">
 
     <form class="form bg-white p-5 rounded-lg w-[650px] mx-auto mt-[100px]">
       <div class="flex flex-col gap-5">
@@ -35,6 +35,10 @@
           </button>
         </div>
       </div>
+      <label class="py-5 pl-3 inline-block">
+        <input class="choose-input hidden" type="file">
+        <img class="choose-img" src="./images/choose.svg" alt="Choose img" width="100" height="50">      
+      </label>
     </form>
 
     <div class="w-[650px] mt-5 mx-auto bg-white rounded-lg p-5 flex justify-between gap-3">
@@ -48,7 +52,7 @@
     <ul class="list w-[650px] mt-5 mx-auto bg-white rounded-lg p-5 flex flex-col gap-3"></ul>
 
     <div class="wrapper fixed top-[100%] bottom-0 duration-300 w-full backdrop-blur-md" id = "wrapper">
-      <div class="duration-300 scale-0 modal background-image absolute top-0 bottom-0 w-[450px] h-[250px] right-0 left-0 m-auto bg-blue-100 rounded-lg shadow-lg"></div>
+      <div class="duration-300 scale-0 modal background-image absolute top-0 bottom-0 w-[450px] h-[450px] right-0 left-0 m-auto bg-blue-100 rounded-lg shadow-lg"></div>
     </div>
 
     <script src="./Js/todo.js"></script>
